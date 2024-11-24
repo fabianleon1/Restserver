@@ -6,7 +6,7 @@ class Server{
 
     constructor(){
         this.app=express();
-        this.port=process.env.PORT; // Aqui se declara el puerto en el archivo .env
+        this.port=process.env.PORT || 3000; // Aqui se declara el puerto en el archivo .env
         this.usuariosPath='/api/usuarios';
 
         //middlewares 
